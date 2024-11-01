@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>FARM +</title>
+  <link rel="icon" href=" TP CP PICS\icon.jpeg"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Averia+Sans+Libre:ital,wght@0,300;0,400;1,700&family=Marhey:wght@300;600;700&family=Montagu+Slab:opsz,wght@16..144,500&family=Noto+Serif:ital,wght@0,800;0,900;1,800;1,900&family=Pridi:wght@500&display=swap" rel="stylesheet">
+    
+<!-- Latest compiled JavaScript rgb(0, 242, 255); -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/f25cce70b4.js" crossorigin="anonymous"></script>
+<style>
+	#grid-div{
+				display:grid;
+				grid-template-columns:auto auto auto auto auto ;
+				grid-gap:55px;
+				width:80%;
+				margin:auto;
+
+			 }	
+			 #h:hover{
+			 transform:scale(1.1);
+			 transition-duration:0.1s;
+		   /* new value */
+	   }
+	   #h:hover{
+		   box-shadow: 0 0 5px rgb(253, 254, 252),
+					   0 0 25px rgb(254, 255, 254),
+					   0 0 50px rgb(251, 252, 250),
+					   0 0 200px rgb(248, 250, 248);
+	   }
+		 p,H1,H5{
+		   font-size:17px;
+			color:rgb(246, 249, 245);
+		   font-family: 'Montagu Slab', sans-serif;
+		   font-style: italic;
+		   font-weight: 500;
+		  }
+		  H4{
+		   color:orange;
+		   font-size:20px;
+		   font-family: 'Marhey', sans-serif;
+		   font-weight: 600;
+		  }
+		  H6{
+		   font-size:20px;
+			color:rgb(246, 249, 245);
+		   font-family: 'Montagu Slab', sans-serif;
+		   font-style: italic;
+		   font-weight: 500;
+		  }
+		  H1{
+		   font-size:25px;
+		   color: #1dba21;
+		   font-family: 'pridi', sans-serif;
+		   font-weight: 500;
+		  }
+		  #e{
+			   float:right;
+			   padding-right:50px;
+			   padding-top:10px;
+			
+		  }
+		  
+	  body{
+		background-color: black;
+		background-image: url(AIS\ PICS/indiabg1.jpg);
+		background-attachment:fixed;
+		background-position:center center;
+		background-size:cover;
+	  }
+
+	  footer {
+		   display: flex;
+		   flex-direction: column;
+		   align-items: center;
+		   padding-top: 10px;
+		   text-align: center;
+		   background-color: black;
+	   }
+
+	   .content {
+		   width: 80%;
+		   max-width: 1200px;
+		   margin: 0 auto;
+		   
+	   }
+
+	   .team-container {
+		   display: grid;
+		   grid-template-columns: auto auto auto auto;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+	   }
+
+	   .team {
+		   display: flex;
+		   flex-direction: column;
+		   gap: 10px;
+	   }
+
+	   #teamp{
+		   width: 280px;
+		   height: 300px;
+	   }
+
+	   .team img {
+		   
+		   max-height: 100%;
+		   border-radius: 20px;
+	   }
+
+	   .Socials {
+		   display: flex;
+		   font-size: larger;
+		   align-items: center;
+		   justify-content: center;
+	   }
+
+	   .Socials a {
+		   margin-right: 20px;
+	   }
+
+	   .Socials i {
+		   transition: font-size 0.3s ease-in-out;
+	   }
+
+	   .Socials a:hover i {
+		   
+		   font-size: x-large;
+	   }
+
+	   #topbtns{
+		   background-color:#006600;
+		   width:100%; 
+		   height:150px;
+	   }
+	 
+   @media only screen and (max-width: 1200px) {
+	   #grid-div {
+		   grid-template-columns: auto auto auto;
+		   grid-gap:75px;
+		   
+	   }
+	   H5{
+		   font-size:25px;
+			color:rgb(249, 252, 248);
+		   font-style: bold;
+		  }
+
+		  H6{
+		   font-size:45px;
+		  }
+   
+			 #h:hover{
+			 transform:scale(1.1);
+			 transition-duration:0.1s;
+	   } 
+
+	   .team-container {
+		   display: grid;
+		   grid-template-columns: auto  ;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+	   }
+	   #teamp{
+		   width: 100%;
+		   height: 100%;
+	   }
+	   .team img {
+		   height: auto;
+		   max-width: 100%;
+		   border-radius: 20px;
+		   
+	   }
+	   p,H1,H4{
+		   font-size:40px;
+	   }
+	   .Socials i {
+		 font-size: 1.5em; /* Adjust the initial font size */
+		 transition: transform 0.3s ease-in-out; /* Change transition property to transform */
+	   }
+
+	   .Socials a:hover i {
+			transform: scale(2); /* Increase the scale on hover */
+		}
+   }
+
+
+
+   @media screen and (max-width: 960px){
+	   #grid-div {
+
+		   grid-template-columns: auto auto ;
+		   grid-gap:70px;
+	   }
+	   #a{
+		   height:300px;
+	   }
+	   #b{
+		   width:55%;
+		   padding-left:0px;
+	   }
+	   #e{
+				display:grid;
+				grid-template-columns:auto auto auto auto ;
+				grid-gap:10px;
+				width:45%;
+				margin:auto;
+				float:left;
+			   padding-left:15px;
+			   padding-top:10px;
+			   
+		   }
+		   .team-container {
+		   display: grid;
+		   grid-template-columns: auto  ;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+	   }
+   }
+
+   @media screen and (max-width: 1200px){
+	   .team-container {
+		   display: grid;
+		   grid-template-columns: auto auto  ;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+	   }
+	   #tpic{
+		   height: 350px;
+		   max-width: 350px;
+	   }
+	   h6{
+		   font-size: 15px;
+	   }
+	   h4{
+		   font-size: 20px;
+	   }
+	   #teamp{
+		   width: 350px;
+	   }
+   }
+
+   @media screen and (max-width: 980px){
+	   .team-container {
+		   display: grid;
+		   grid-template-columns: auto   ;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+		   
+	   }
+
+	   #tpic {
+		   height: auto;
+		   max-width: 100%;
+		   border-radius: 20px;	
+	   }
+	   #teamp{
+		   width: 100%;
+		   height: 100%;
+	   }
+
+	   H6{
+		   font-size:35px;
+		  }
+   }
+
+   @media screen and (max-width: 975px){
+	   .team-container {
+		   display: grid;
+		   grid-template-columns: auto auto  ;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+	   }
+
+	   #tpic{
+		   height: 350px;
+		   max-width: 350px;
+	   }
+	   h6{
+		   font-size: 15px;
+	   }
+	   h4{
+		   font-size: 20px;
+	   }
+	   #teamp{
+		   width: 350px;
+	   }
+   }
+
+   @media screen and (max-width: 740px){
+	   h6{
+			   font-size: 15px;
+		   }
+	   .team-container {
+		   display: grid;
+		   grid-template-columns: auto auto ;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+	   }
+
+	   #tpic{
+		   height: 280px;
+		   max-width: 280px;
+	   }
+	   h6{
+		   font-size: 15px;
+	   }
+	   h4{
+		   font-size: 20px;
+	   }
+	   #teamp{
+		   width: 300px;
+	   }
+   }
+
+   @media screen and (max-width: 620px){
+		#grid-div {
+
+		   grid-template-columns: auto auto ;
+		   grid-gap:10px;
+	   }
+	   #h{
+		   width: 80%;
+		   height: 50%;
+	   }
+	   h5{
+		   font-size: 20px;
+	   }
+
+	   #a{
+		   height:300px;
+	   }
+	   #b{
+		   width:55%;
+		   padding-left:0px;
+	   }
+	   
+	   .team-container {
+		   display: grid;
+		   grid-template-columns: auto ;
+		   gap: 20px;
+		   margin: 20px auto;
+		   justify-content: center;
+	   }
+
+	   #tpic {
+		   height: auto;
+		   max-width: 100%;
+		   border-radius: 20px;
+		   
+	   }
+		
+	   #teamp{
+		   width: auto;
+	   }
+
+	   #e{
+				display:grid;
+				grid-template-columns:auto auto auto auto ;
+				grid-gap:2px;
+				width:20%;
+				margin:auto;
+				float:left;
+			   padding-left:15px;
+			   padding-top:10px;
+			   
+		   }
+
+	   #topbtns{
+		   width: 50%;
+	   }
+
+	   button{
+		   width: 85%;
+		   height: 90%;
+	   }
+
+   }
+
+   @media screen and (max-width: 400px){
+	   #grid-div {
+
+		   grid-template-columns: auto auto ;
+		   grid-gap:0px;
+	   }
+	   #h{
+		   width: 70%;
+		  height: 70%;
+	   }
+
+	   h5{
+		   font-size: 12px;
+	   }
+   }
+	   
+   
+</style>
+ </head>
+<body>
+  <HEADER>
+  <div >
+    <DIV style="color:blue; display:flex; justify-content:center;" >
+	    
+         <IMG  id ="b" SRC="AIS PICS/New logo 10.png" width="45%" height="150px"  
+		  style= "border-top:10px ridge orange;
+		 border-left:15px ridge orange; 
+		 border-bottom:10px ridge orange;
+		 border-right:10px ridge orange;"/>         
+		 <!--IMG SRC="C:\backg pic\tastfarm.png" width="67%" height="150px" /--> 
+		<DIV  id="topbtns">
+		  <div id="e" style="background-color:#006600;" >
+		    <button class="btn btn-outline-warning"  onclick="alert('WATER BUTTON CLICKED')">ABOUT </button> &nbsp;
+	      <button class="btn btn-outline-warning"  onclick="alert('FERTILIZERS BUTTON CLICKED')">M.D.I</button>  &nbsp;
+	      <button class="btn btn-outline-warning" onclick="alert('YEILD BUTTON CLICKED')">CRISIS CALL</button> &nbsp;
+	      <button class="btn btn-outline-warning"  onclick="alert('PROFIT BUTTON CLICKED')">OTHER</button></center>  <br>        
+		 </DIV>
+    </DIV>
+	
+  </div>
+ </HEADER>
+ <!--Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" style="padding-bottom:20px">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+	
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="TP CP PICS\Slide3.jpg"   id="a" height=480px  class="d-block w-100">
+    </div>
+	 <div class="carousel-item">
+      <img src="TP CP PICS\Slide4.jpg"   id="a" height=480px  class="d-block w-100">
+    </div>
+	 <div class="carousel-item ">
+      <img src="TP CP PICS\Slide5.jpg"   id="a" height=480px  class="d-block w-100">
+    </div>
+	 <div class="carousel-item ">
+      <img src=" TP CP PICS\Slide6.jpg"   id="a" height=480px  class="d-block w-100">
+    </div>
+	 <div class="carousel-item ">
+      <img src=" TP CP PICS\Slide7.jpg"   id="a" height=480px  class="d-block w-100">
+    </div>
+	 <div class="carousel-item ">
+      <img src=" TP CP PICS\Slide8.jpg"   id="a" height=480px  class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src=" TP CP PICS\Slide9.jpg" id="a"  height=480px  class="d-block w-100">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<div id="grid-div">
+ 
+     <div id="X">
+        <a href="https://mhasiemmalik.github.io/FarmPlusRepoTelangana/">
+		<img id="h" href="file:///D:/ADILABAD+.html" src="AIS PICS/ANDHRA PRADESH.png" width="110%" height="80%" style="border-radius:20px; ">
+		<strong><h5> ANDHRA PRADESH / आंध्र प्रदेश </h5></strong></a>
+     </div>
+	 <div id="X">
+        <a href="file:///D:/BHADRADRI KOTHAGUDEM.html">
+		<img id="h" src="AIS PICS\ARUNACHAL PRADESH.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> ARUNACHAL PRADESH / अरुणाचल प्रदेश </h5></strong></a>
+     </div>
+	  <div id="X">
+	   <a href="file:///D:/HANUMAKONDA.html">
+		<img id="h" src="AIS PICS\ASSAM.png" width="100%" height="80%" style="border-radius:20px;">
+		<strong><h5> ASSAM / असम </h5></strong></a>
+     </div>
+	  <div id="X">
+	   <a href="file:///D:/Hyd.html">
+		<img id="h"  src="AIS PICS\BIHAR.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> BIHAR / बिहार </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/JAGTIAL.html">
+		<img id="h" src="AIS PICS\CHHATTISGARH.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> CHHATTISGARH / छत्तीसगढ </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="Goa+.html">
+		<img id="h" src="AIS PICS\GOA.png" width="110%" height="80%" style="border-radius:20px; ">
+		<strong><h5> GOA / गोवा  </h5></strong></a>
+     </div>
+      <div id="X">
+	   <a href="file:///D:/JAYASHANKAR.html">
+		<img id="h" src="AIS PICS\GUJARAT.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> GUJARAT / गुजरात</h5></strong></a>
+     </div>
+      <div id="X">
+	   <a href="file:///D:/JOGULAMBA GADWAL.html">
+		<img id="h" src="AIS PICS\HARYANA.png " width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> HARYANA / हरयाणा </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/KAMAREDDY.html">
+		<img id="h" src="AIS PICS\HIMACHAL PRADESH.png" width="115%" height="80%" style="border-radius:20px; ">
+		<strong><h5> HIMACHAL PRADESH / हिमाचल प्रदेश  </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/KARIMNAGAR.html">
+		<img id="h" src="AIS PICS\JHARKHAND.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> JHARKHAND / झारखंड  </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/KHAMMAM.html">
+		<img id="h" src="AIS PICS\KARNATAKA.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> KARNATAKA / कर्नाटक </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/KOMARAMBHEEM.html">
+		<img id="h" src="AIS PICS\KERALA.png" width="110%" height="80%" style="border-radius:20px; ">
+		<strong><h5> KERALA / केरल</h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/MAHABUBABAD.html">
+		<img id="h" src="AIS PICS\MADHYA PRADESH.jpg" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> MADHYA PRADESH / मध्य प्रदेश  </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/MAHABUBNAGAR.html">
+		<img id="h" src="AIS PICS\MAHARASHTRA.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> MAHARASHTRA / महाराष्ट्र </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/MANCHERIAL.html">
+		<img id="h" src="AIS PICS\MANIPUR.jpg" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> MANIPUR / मणिपुर </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/MEDAK.html">
+		<img id="h" src="AIS PICS\MEGHALAYA.png" width="110%" height="80%" style="border-radius:20px; ">
+		<strong><h5> MEGHALAYA / मेघालय </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/MEDCHAL.html">
+		<img id="h" src="AIS PICS\MIZORAM.jpg" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> MIZORAM / मिजोरम</h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/MULUG.html">
+		<img id="h" src="AIS PICS\NAGALAND.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> NAGALAND / नगालैंड </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/NAGARKURNOOL.html">
+		<img id="h" src="AIS PICS\ODISHA.jpg" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> ODISHA / ओडिशा </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/NALGONDA.html">
+		<img id="h" src="AIS PICS\PUNJAB.jpg" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> PUNJAB / पंजाब </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="https://mhasiemmalik.github.io/RajasthanMain/">
+		<img id="h" src="AIS PICS\RAJASTHAN.jpg" width="105%" height="80%" style="border-radius:20px; ">
+		<strong><h5> RAJASTHAN / राजस्थान </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/NIRMAL.html">
+		<img id="h" src="AIS PICS\SIKKIM.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> SIKKIM / सिक्किम </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/NIZAMABAD.html">
+		<img id="h" src="AIS PICS\TAMIL NADU.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> TAMIL NADU / तमिलनाडु </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="https://mhasiemmalik.github.io/FarmPlusRepoTelangana/">
+		<img id="h" src="AIS PICS\TELANGANA.jpeg" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> TELANGANA / तेलंगाना </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/RAJANNA SIRCILLA.html">
+		<img id="h" src="AIS PICS\TRIPURA.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> TRIPURA / त्रिपुरा</h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/RANGAREDDY.html">
+		<img id="h" src="AIS PICS\UTTARAKHAND.jpg" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> UTTARAKHAND / उत्तराखंड </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/SANGAREDDY.html">
+		<img id="h" src="AIS PICS\UTTAR PRADESH.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> UTTAR PRADESH / उत्तर प्रदेश </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="WEST BENGAL\WB WP\WestBengal+.html">
+		<img id="h" src="AIS PICS\WEST BENGAL.png" width="105%" height="80%" style="border-radius:20px; ">
+		<strong><h5> WEST BENGAL / पश्चिम बंगाल </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/SIDDIPET.html">
+		<img id="h" src="AIS PICS\DELHI.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> DELHI / दिल्ली </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/SURYAPET.html">
+		<img id="h" src="AIS PICS/JAMMU,KASHMIR _ LADAKH.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> JAMMU,KASHMIR & LADAKH / जम्मू, कश्मीर और लद्दाख</h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/SURYAPET.html">
+		<img id="h" src="AIS PICS/DADRA, DAMAN _ DIU.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> DADRA, DAMAN & DIU / दादरा, दमन & दिउ</h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/SURYAPET.html">
+		<img id="h" src="AIS PICS/ANDAMAN _ NICOBAR.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> ANDAMAN & NICOBAR / अण्डमान और निकोबार </h5></strong></a>
+     </div>
+	 <div id="X">
+	   <a href="file:///D:/VIKARABAD.html">
+		<img id="h" src="AIS PICS\LAKSHADWEEP.png" width="100%" height="80%" style="border-radius:20px; ">
+		<strong><h5> LAKSHADWEEP / लक्षद्वीप </h5></strong></a>
+     </div>
+</div>	<br><br><br><br>
+<footer>
+	<div class="content">
+		<h1>About:</h1>
+		<p>some text</p>
+		<h1>Contents:</h1>
+		<p>some text</p>
+        <h1>Creators:</h1>
+		<div class="team-container">
+			<!-- Team members -->
+			<div class="team">
+				<img id="tpic" src="AIS PICS/Malik 6.jpg" alt="Malik"  height="350px"/>
+				<h5>Mohammed Hasiem Malik</h5>
+				<h4 style="font-family: 'Montagu Slab', sans-serif;"> TEAM LEAD </h4>
+				<div id="teamp">
+					<h6> 
+						Designer of what ever you are seeing right now ! 
+						Complete Implementation of 'Project Designing, Deployment, Coding, and Testing' of Both Front-End 
+						and Back-End of the project. and all the modules like Weather, Marketplace etc was taken care. 
+						Led the Entire Team to work on specific modules of the Project
+						respectively.
+					</h6>            
+				</div>
+				<br><br>
+				<div class="Socials">
+					<a href="#" title="WhatsApp" target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+					<a href="#" title="Email" target="_blank">
+						<i class="far fa-envelope"></i>
+					</a>
+					<a href="#" title="Instagram" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/m-hasiem-malik-5116a8260/" title="LinkedIn" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="team">
+				<img id="tpic" src="AIS PICS/Vamshi .jpg" alt="Vamshi"  height="350px" />
+				<h5>Artham Vamshi</h5>
+				<h4> Research & Development </h4>
+				<div id="teamp">
+					<h6>
+						Research on Resourse requirement and allocation for the horticulture 
+						based on soil type,quantity and quality of production and growing mechanism.
+						Designing and Development of the UI and JavaScript for calculations , types and growing mechanism pages.
+					</h6>	
+			    </div><br>
+				<div class="Socials">
+					<a href="#" title="WhatsApp" target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+					<a href="#" title="Email" target="_blank">
+						<i class="far fa-envelope"></i>
+					</a>
+					<a href="#" title="Instagram" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" title="LinkedIn" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+			
+
+			<div class="team">
+				<img id="tpic" src="AIS PICS/assif.jpg" alt="Assif"  height="350px"/>
+				<h5>Mohd Asif Ahmed</h5>
+				<h4> Research & Development </h4>
+				<div id="teamp">
+					<h6>Research on seasonal growth of crops & horticulture Like spices, pulses, cereals, oil seeds, vegetables etc along with market 
+						share on district and state level , developed types and growing mechanism pages  of spices.
+					</h6>
+				</div>
+				
+				<div class="Socials">
+					<a href="#" title="WhatsApp" target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+					<a href="#" title="Email" target="_blank">
+						<i class="far fa-envelope"></i>
+					</a>
+					<a href="#" title="Instagram" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" title="LinkedIn" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="team">
+				<img id="tpic" src="AIS PICS/Ajay HITW1.jpeg" alt="Ajay" height="350px"/>
+				<h5>Pandhiri Ajay Reddy</h5>
+				<h4> Research & Development </h4>
+				<div id="teamp">
+					<h6>Research on Types of crops like Fruits and other horticulture Like flowers,
+						vegetables and their soil types,water requirements etc along with market 
+						share on district and state level,and growing mechanism of fruits along 
+						with translations and audio facilities
+					</h6>
+				</div>	
+				<div class="Socials">
+					<a href="#" title="WhatsApp" target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
+					<a href="#" title="Email" target="_blank">
+						<i class="far fa-envelope"></i>
+					</a>
+					<a href="#" title="Instagram" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" title="LinkedIn" target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h1>Research Papers</h1>
+			<a href="xxx">Link to Research Papers</a>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+       
+	   <!--
+
+		<footer>
+	<div style="background-color: darkslategray; width:100%; height:0px;">
+		<div>
+			
+				<center><h1>About:</h1></center>
+			
+			<div>
+				<div class="Team">
+					<img src="AIS PICS/Ajay HITW.png" width="100%" height="80%" style="border-radius:20px;">
+			    </div><br>
+
+			    <div class="Team">
+				   <img src="AIS PICS/Ajay HITW.png" width="100%" height="80%" style="border-radius:20px; ">
+			    </div><br>
+
+			    <div class="Team">
+			    <img src="AIS PICS/Ajay HITW.png" width="100%" height="80%" style="border-radius:20px; ">
+			    </div><br>
+
+			    <div class="Team">
+			    <img src="AIS PICS/Ajay HITW.png" width="100%" height="80%" style="border-radius:20px; ">
+			    </div><br>
+			</div>
+		</div>
+	</div>
+</footer>
+	   Coding By CodingNepal - youtube.com/codingnepal 
+	   <IMG SRC="C:\project\tlm.jpg" /><center><IMG SRC="C:\project\ts.jpeg" width="90%" height="90%"/><center/>-->
+ </body>
+</html>
